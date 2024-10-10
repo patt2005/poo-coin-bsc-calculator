@@ -6,6 +6,7 @@ import 'package:poo_coin_bsc_calculator/pages/currency_info_page.dart';
 import 'package:poo_coin_bsc_calculator/utils/colors.dart';
 import 'package:poo_coin_bsc_calculator/utils/consts.dart';
 import 'package:poo_coin_bsc_calculator/widgets/coin_card_info.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -369,6 +370,10 @@ class _HomePageState extends State<HomePage> {
             ),
             SizedBox(height: pageSize.height * 0.05),
             ListTile(
+              onTap: () {
+                launchUrl(Uri.parse(
+                    "https://www.freeprivacypolicy.com/live/202176db-ba99-4655-8db1-f05e15ff4b4f"));
+              },
               leading: const Icon(
                 CupertinoIcons.shield,
                 color: Colors.white,
@@ -379,6 +384,10 @@ class _HomePageState extends State<HomePage> {
               ),
             ),
             ListTile(
+              onTap: () {
+                launchUrl(Uri.parse(
+                    "https://www.termsfeed.com/live/cdaab51b-9cb4-4a9d-816e-8c6f94e4887b"));
+              },
               leading: const Icon(
                 CupertinoIcons.info,
                 color: Colors.white,
@@ -396,16 +405,6 @@ class _HomePageState extends State<HomePage> {
                   inAppReview.requestReview();
                 }
               },
-              leading: const Icon(
-                CupertinoIcons.chat_bubble,
-                color: Colors.white,
-              ),
-              title: Text(
-                "Contact us",
-                style: TextStyle(color: kTextColor),
-              ),
-            ),
-            ListTile(
               leading: const Icon(
                 CupertinoIcons.hand_thumbsup,
                 color: Colors.white,

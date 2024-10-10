@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-// import 'package:poo_coin_bsc_calculator/pages/onboarding_page.dart';
-import 'package:poo_coin_bsc_calculator/pages/url_page.dart';
+import 'package:poo_coin_bsc_calculator/pages/onboarding_page.dart';
 import 'package:poo_coin_bsc_calculator/utils/consts.dart';
 
 void main() {
@@ -17,7 +16,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(fontFamily: "Inter"),
-      home: const UrlScreen(url: "https://poocoin.app/"),
+      home: const OnboardingPage(),
     );
   }
 }
